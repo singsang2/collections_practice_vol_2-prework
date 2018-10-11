@@ -52,7 +52,7 @@ def merge_data(keys, data)
   data.each {|element| names.push(element.keys)}
   index = 0
   while index < keys.lengths
-    keys.each {|element| element += data[index].value if element[:first_name]==names[index]
+    keys.each {|element| element.merge(data[index].value) if element[:first_name]==names[index]
 end
 
 def find_cool(array)

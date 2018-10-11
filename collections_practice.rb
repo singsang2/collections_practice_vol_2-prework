@@ -38,7 +38,10 @@ def count_elements(array)
   dup_array = array.dup
   counter = []
   until dup_array.length == 0
-    counter.push(dup_array.first.merge({})
+    counter.push(dup_array.first.merge({:count => dup_array.count(dup_array.first)})
+    dup_array.delete(dup_array.first)
+  end
+  counter
     
 end
 

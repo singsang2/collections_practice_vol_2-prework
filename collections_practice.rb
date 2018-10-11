@@ -69,8 +69,12 @@ end
 
 def organize_schools(hash)
   name = hash.keys
-  locations = []
-  hash.each {|keys, val| location << val[:location]}
+  locations = {}
+  city = []
+  hash.each {|keys, val| city << val[:location]}
+  index = 0 
+  while index < name.length
+    location[city[index]] =>
   
   
 end

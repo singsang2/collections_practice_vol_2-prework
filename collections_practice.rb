@@ -45,7 +45,7 @@ def count_elements(array)
     
 end
 
-puts count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
+#puts count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
 
 def merge_data(keys, data)
   index = 0

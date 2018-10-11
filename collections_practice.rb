@@ -74,8 +74,13 @@ def organize_schools(hash)
   hash.each {|keys, val| city << val[:location]}
   index = 0 
   while index < name.length
-    location[city[index]] =>
-  
+    if locations.include?(city[index])
+      locations[city[index]] += [name[index]]
+    else
+      locations[city[index]] = [name[index]]
+    end
+  end
+  locations
   
 end
   

@@ -79,6 +79,7 @@ def organize_schools(hash)
     else
       locations[city[index]] = [name[index]]
     end
+    index += 1
   end
   locations
   

@@ -62,6 +62,7 @@ def find_cool(array)
     if element[:temperature] == "cool"
       return element
     end
+  end
   nil
 end
   

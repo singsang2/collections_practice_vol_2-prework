@@ -38,7 +38,7 @@ def count_elements(array)
   dup_array = array.dup
   counter = []
   until dup_array.length == 0
-    counter.push(dup_array.first
+    counter.push(dup_array.first.merge({})
     
 end
 

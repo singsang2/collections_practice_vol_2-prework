@@ -35,11 +35,10 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
+  dup_array = array.dup
   counter = []
-  array.each do |element|
-    if !counter.include?(element)
-      counter = element  
-      array.count(element)
+  until dup_array.length == 0
+    counter.push(dup_array.first
     
 end
 

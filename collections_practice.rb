@@ -49,6 +49,7 @@ end
 
 def merge_data(keys, data)
   names = []
+  puts names
   data.each {|element| names.push(element.keys)}
   index = 0
   merged = []

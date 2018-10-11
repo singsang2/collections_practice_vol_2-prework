@@ -57,7 +57,7 @@ def merge_data(keys, data)
     keys.each {|element| merged.push(element.merge(data[index].values.first)) if element[:first_name]==names[index]}
     index += 1
   end
-  keys
+  puts merged
 end
 
 keys= [

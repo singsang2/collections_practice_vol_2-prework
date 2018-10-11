@@ -48,13 +48,11 @@ end
 #puts count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
 
 def merge_data(keys, data)
+  names = []
+  data.each {|element| names.push(element.keys)}
   index = 0
-  hash = {}
-  while index < keys.size
-    hash[keys[index].to_sym] = data[index]
-    index += 1
-  end
-  hash
+  while index < keys.lengths
+    keys.each {|element| element += data[index].value if element[:first_name]==names[index]
 end
 
 def find_cool(array)

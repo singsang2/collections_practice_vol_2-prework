@@ -54,7 +54,7 @@ def merge_data(keys, data)
   index = 0
   merged = []
   while index < keys.length
-    keys.each {|element| puts data[index].values}
+    keys.each {|element| puts element.merge(data[index].values.first)}
     puts index
     index += 1
   end

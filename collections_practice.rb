@@ -54,7 +54,7 @@ def merge_data(keys, data)
   merged = []
   puts data.size
   while index < keys.length
-    keys.each {|element| puts merged.push(element.merge(data.first[names[index]]))}
+    keys.each {|element| puts merged.push(element.merge(data.first[names[index]])) if keys[:first_name]==names[index]}
     puts index
     index += 1
   end

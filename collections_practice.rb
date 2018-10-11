@@ -35,8 +35,11 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-
+  array.each do |element|
+    
 end
+
+puts count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
 
 def merge_data(keys, data)
   index = 0

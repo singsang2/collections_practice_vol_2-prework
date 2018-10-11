@@ -67,7 +67,10 @@ def find_cool(array)
   cool_list
 end
 
-def organize_schools(array)
+def organize_schools(hash)
+  name = hash.keys
+  locations = []
+  hash.each {|keys, val| location << val[:location]}
   
   
 end

@@ -64,6 +64,6 @@ def find_cool(array)
       cool_list << element
     end
   end
-  list
+  cool_list
 end
   

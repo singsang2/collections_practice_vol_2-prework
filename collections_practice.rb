@@ -60,6 +60,15 @@ def merge_data(keys, data)
   keys
 end
 
+keys= [
+           {
+            :first_name => "blake"
+        },
+           {
+            :first_name => "ashley"
+        }
+    ]
+data = 
 
 merge_data(keys, data)
 def find_cool(array)

@@ -68,9 +68,23 @@ keys= [
             :first_name => "ashley"
         }
     ]
-data = 
+data =  [
+           {
+             "blake" => {
+                :awesomeness => 10,
+                     :height => "74",
+                  :last_name => "johnson"
+            },
+            "ashley" => {
+                :awesomeness => 9,
+                     :height => 60,
+                  :last_name => "dubs"
+            }
+        }
+    ]
 
 merge_data(keys, data)
+
 def find_cool(array)
   cool_list = []
   array.each do |element|
